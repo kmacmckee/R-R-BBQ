@@ -112,24 +112,22 @@
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="R&amp;R-Featured" translatesAutoresizingMaskIntoConstraints="NO" id="HUY-wo-vJs">
-                                <rect key="frame" x="0.0" y="53.5" width="374" height="189.5"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9QQ-A8-HeJ">
+                                <rect key="frame" x="0.0" y="60" width="374" height="183"/>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="HUY-wo-vJs" firstAttribute="top" secondItem="a1g-8F-puq" secondAttribute="bottom" constant="16" id="5pi-sa-Zwe"/>
+                            <constraint firstItem="86C-fk-wy9" firstAttribute="bottom" secondItem="9QQ-A8-HeJ" secondAttribute="bottom" id="8JX-Te-m5Z"/>
+                            <constraint firstItem="86C-fk-wy9" firstAttribute="trailing" secondItem="9QQ-A8-HeJ" secondAttribute="trailing" id="KAV-6q-PgF"/>
+                            <constraint firstItem="9QQ-A8-HeJ" firstAttribute="top" secondItem="86C-fk-wy9" secondAttribute="top" constant="16" id="M0e-pX-uKc"/>
+                            <constraint firstItem="9QQ-A8-HeJ" firstAttribute="leading" secondItem="86C-fk-wy9" secondAttribute="leading" id="Q0s-oE-CDf"/>
                             <constraint firstItem="a1g-8F-puq" firstAttribute="top" secondItem="5ly-zc-FTJ" secondAttribute="top" constant="16" id="Uxo-oN-gjW"/>
-                            <constraint firstAttribute="trailing" secondItem="HUY-wo-vJs" secondAttribute="trailing" id="XAL-TL-48w"/>
                             <constraint firstItem="a1g-8F-puq" firstAttribute="leading" secondItem="5ly-zc-FTJ" secondAttribute="leading" constant="16" id="hq9-go-aCA"/>
-                            <constraint firstItem="HUY-wo-vJs" firstAttribute="leading" secondItem="5ly-zc-FTJ" secondAttribute="leading" id="i6P-xN-tyP"/>
-                            <constraint firstAttribute="bottom" secondItem="HUY-wo-vJs" secondAttribute="bottom" id="zA1-hB-J4m"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="86C-fk-wy9"/>
                     </view>
-                    <connections>
-                        <outlet property="menuImageView" destination="HUY-wo-vJs" id="g3q-yv-LeL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOq-zW-fm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,23 +147,24 @@
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="R&amp;R-Featured" translatesAutoresizingMaskIntoConstraints="NO" id="Z3J-QH-GVi">
-                                <rect key="frame" x="0.0" y="52.5" width="374" height="190.5"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hFx-ag-tx8">
+                                <rect key="frame" x="0.0" y="60" width="374" height="183"/>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Z3J-QH-GVi" firstAttribute="leading" secondItem="kTO-yl-GQa" secondAttribute="leading" id="18S-0g-OqA"/>
-                            <constraint firstAttribute="bottom" secondItem="Z3J-QH-GVi" secondAttribute="bottom" id="VU3-0b-lLL"/>
-                            <constraint firstAttribute="trailing" secondItem="Z3J-QH-GVi" secondAttribute="trailing" id="XEK-1o-Pwg"/>
+                            <constraint firstItem="VFU-bR-x5k" firstAttribute="trailing" secondItem="hFx-ag-tx8" secondAttribute="trailing" id="Smg-mR-yXS"/>
                             <constraint firstItem="Db3-gG-6sF" firstAttribute="leading" secondItem="kTO-yl-GQa" secondAttribute="leading" constant="16" id="XmX-hD-oTa"/>
                             <constraint firstItem="Db3-gG-6sF" firstAttribute="top" secondItem="kTO-yl-GQa" secondAttribute="top" constant="16" id="YSc-GX-CLR"/>
-                            <constraint firstItem="Z3J-QH-GVi" firstAttribute="top" secondItem="Db3-gG-6sF" secondAttribute="bottom" constant="16" id="wvR-H2-GxR"/>
+                            <constraint firstItem="hFx-ag-tx8" firstAttribute="leading" secondItem="VFU-bR-x5k" secondAttribute="leading" id="b9J-1c-mO5"/>
+                            <constraint firstItem="VFU-bR-x5k" firstAttribute="bottom" secondItem="hFx-ag-tx8" secondAttribute="bottom" id="nyj-eY-bhV"/>
+                            <constraint firstItem="hFx-ag-tx8" firstAttribute="top" secondItem="VFU-bR-x5k" secondAttribute="top" constant="16" id="wO0-hh-mJw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VFU-bR-x5k"/>
                     </view>
                     <connections>
-                        <outlet property="cateringImageView" destination="Z3J-QH-GVi" id="R9J-Wa-HMB"/>
+                        <outlet property="cateringView" destination="hFx-ag-tx8" id="7yD-R6-WT3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCU-sx-LOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -174,7 +173,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="R&amp;R-Featured" width="1600" height="870"/>
         <image name="R&amp;R-Ribbs" width="2300" height="1247"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
     </resources>

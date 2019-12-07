@@ -15,10 +15,10 @@ class HomeMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        menuImageView.addShadow()
     }
     
+    
+
 
     /*
     // MARK: - Navigation
