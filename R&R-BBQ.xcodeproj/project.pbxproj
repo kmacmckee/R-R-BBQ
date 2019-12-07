@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4956F8D239B3E1200BF0B45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956F8C239B3E1200BF0B45 /* AppDelegate.swift */; };
+		C4956F8F239B3E1200BF0B45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956F8E239B3E1200BF0B45 /* SceneDelegate.swift */; };
+		C4956F91239B3E1200BF0B45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956F90239B3E1200BF0B45 /* ViewController.swift */; };
+		C4956F94239B3E1200BF0B45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4956F92239B3E1200BF0B45 /* Main.storyboard */; };
+		C4956F96239B3E1300BF0B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4956F95239B3E1300BF0B45 /* Assets.xcassets */; };
+		C4956F99239B3E1300BF0B45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4956F97239B3E1300BF0B45 /* LaunchScreen.storyboard */; };
+		C4956FA4239B3E1300BF0B45 /* R_R_BBQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956FA3239B3E1300BF0B45 /* R_R_BBQTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4956FA0239B3E1300BF0B45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4956F81239B3E1200BF0B45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4956F88239B3E1200BF0B45;
+			remoteInfo = "R&R-BBQ";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4956F89239B3E1200BF0B45 /* R&R-BBQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R&R-BBQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4956F8C239B3E1200BF0B45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4956F8E239B3E1200BF0B45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C4956F90239B3E1200BF0B45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4956F93239B3E1200BF0B45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4956F95239B3E1300BF0B45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4956F98239B3E1300BF0B45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4956F9A239B3E1300BF0B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4956F9F239B3E1300BF0B45 /* R&R-BBQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R&R-BBQTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4956FA3239B3E1300BF0B45 /* R_R_BBQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_R_BBQTests.swift; sourceTree = "<group>"; };
+		C4956FA5239B3E1300BF0B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4956F86239B3E1200BF0B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4956F9C239B3E1300BF0B45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4956F80239B3E1200BF0B45 = {
+			isa = PBXGroup;
+			children = (
+				C4956F8B239B3E1200BF0B45 /* R&R-BBQ */,
+				C4956FA2239B3E1300BF0B45 /* R&R-BBQTests */,
+				C4956F8A239B3E1200BF0B45 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4956F8A239B3E1200BF0B45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4956F89239B3E1200BF0B45 /* R&R-BBQ.app */,
+				C4956F9F239B3E1300BF0B45 /* R&R-BBQTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4956F8B239B3E1200BF0B45 /* R&R-BBQ */ = {
+			isa = PBXGroup;
+			children = (
+				C4956F8C239B3E1200BF0B45 /* AppDelegate.swift */,
+				C4956F8E239B3E1200BF0B45 /* SceneDelegate.swift */,
+				C4956F90239B3E1200BF0B45 /* ViewController.swift */,
+				C4956F92239B3E1200BF0B45 /* Main.storyboard */,
+				C4956F95239B3E1300BF0B45 /* Assets.xcassets */,
+				C4956F97239B3E1300BF0B45 /* LaunchScreen.storyboard */,
+				C4956F9A239B3E1300BF0B45 /* Info.plist */,
+			);
+			path = "R&R-BBQ";
+			sourceTree = "<group>";
+		};
+		C4956FA2239B3E1300BF0B45 /* R&R-BBQTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4956FA3239B3E1300BF0B45 /* R_R_BBQTests.swift */,
+				C4956FA5239B3E1300BF0B45 /* Info.plist */,
+			);
+			path = "R&R-BBQTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4956F88239B3E1200BF0B45 /* R&R-BBQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4956FA8239B3E1300BF0B45 /* Build configuration list for PBXNativeTarget "R&R-BBQ" */;
+			buildPhases = (
+				C4956F85239B3E1200BF0B45 /* Sources */,
+				C4956F86239B3E1200BF0B45 /* Frameworks */,
+				C4956F87239B3E1200BF0B45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "R&R-BBQ";
+			productName = "R&R-BBQ";
+			productReference = C4956F89239B3E1200BF0B45 /* R&R-BBQ.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4956F9E239B3E1300BF0B45 /* R&R-BBQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4956FAB239B3E1300BF0B45 /* Build configuration list for PBXNativeTarget "R&R-BBQTests" */;
+			buildPhases = (
+				C4956F9B239B3E1300BF0B45 /* Sources */,
+				C4956F9C239B3E1300BF0B45 /* Frameworks */,
+				C4956F9D239B3E1300BF0B45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4956FA1239B3E1300BF0B45 /* PBXTargetDependency */,
+			);
+			name = "R&R-BBQTests";
+			productName = "R&R-BBQTests";
+			productReference = C4956F9F239B3E1300BF0B45 /* R&R-BBQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4956F81239B3E1200BF0B45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Kobe McKee";
+				TargetAttributes = {
+					C4956F88239B3E1200BF0B45 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					C4956F9E239B3E1300BF0B45 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = C4956F88239B3E1200BF0B45;
+					};
+				};
+			};
+			buildConfigurationList = C4956F84239B3E1200BF0B45 /* Build configuration list for PBXProject "R&R-BBQ" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4956F80239B3E1200BF0B45;
+			productRefGroup = C4956F8A239B3E1200BF0B45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4956F88239B3E1200BF0B45 /* R&R-BBQ */,
+				C4956F9E239B3E1300BF0B45 /* R&R-BBQTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4956F87239B3E1200BF0B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4956F99239B3E1300BF0B45 /* LaunchScreen.storyboard in Resources */,
+				C4956F96239B3E1300BF0B45 /* Assets.xcassets in Resources */,
+				C4956F94239B3E1200BF0B45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4956F9D239B3E1300BF0B45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4956F85239B3E1200BF0B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4956F91239B3E1200BF0B45 /* ViewController.swift in Sources */,
+				C4956F8D239B3E1200BF0B45 /* AppDelegate.swift in Sources */,
+				C4956F8F239B3E1200BF0B45 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4956F9B239B3E1300BF0B45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4956FA4239B3E1300BF0B45 /* R_R_BBQTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4956FA1239B3E1300BF0B45 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4956F88239B3E1200BF0B45 /* R&R-BBQ */;
+			targetProxy = C4956FA0239B3E1300BF0B45 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4956F92239B3E1200BF0B45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4956F93239B3E1200BF0B45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4956F97239B3E1300BF0B45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4956F98239B3E1300BF0B45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4956FA6239B3E1300BF0B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4956FA7239B3E1300BF0B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4956FA9239B3E1300BF0B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K572L95MDD;
+				INFOPLIST_FILE = "R&R-BBQ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kobemckee.R-R-BBQ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4956FAA239B3E1300BF0B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K572L95MDD;
+				INFOPLIST_FILE = "R&R-BBQ/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kobemckee.R-R-BBQ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4956FAC239B3E1300BF0B45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K572L95MDD;
+				INFOPLIST_FILE = "R&R-BBQTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kobemckee.R-R-BBQTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/R&R-BBQ.app/R&R-BBQ";
+			};
+			name = Debug;
+		};
+		C4956FAD239B3E1300BF0B45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K572L95MDD;
+				INFOPLIST_FILE = "R&R-BBQTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kobemckee.R-R-BBQTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/R&R-BBQ.app/R&R-BBQ";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4956F84239B3E1200BF0B45 /* Build configuration list for PBXProject "R&R-BBQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4956FA6239B3E1300BF0B45 /* Debug */,
+				C4956FA7239B3E1300BF0B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4956FA8239B3E1300BF0B45 /* Build configuration list for PBXNativeTarget "R&R-BBQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4956FA9239B3E1300BF0B45 /* Debug */,
+				C4956FAA239B3E1300BF0B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4956FAB239B3E1300BF0B45 /* Build configuration list for PBXNativeTarget "R&R-BBQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4956FAC239B3E1300BF0B45 /* Debug */,
+				C4956FAD239B3E1300BF0B45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4956F81239B3E1200BF0B45 /* Project object */;
+}
