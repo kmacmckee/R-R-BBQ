@@ -13,6 +13,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dF5-4e-LMa" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wDw-C6-CDF">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -53,7 +54,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8ec-cH-rpk" firstAttribute="centerX" secondItem="ok4-wF-WMp" secondAttribute="centerX" id="6Ok-Na-AbV"/>
                             <constraint firstItem="QR2-Fc-vd4" firstAttribute="top" secondItem="8ec-cH-rpk" secondAttribute="bottom" constant="20" id="Jcy-nD-vMI"/>
@@ -96,55 +97,60 @@
             </objects>
             <point key="canvasLocation" x="864" y="-686"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Menu View Controller-->
         <scene sceneID="Vsg-Dj-KQF">
             <objects>
-                <viewController id="T9O-TQ-Qk7" sceneMemberID="viewController">
+                <viewController id="T9O-TQ-Qk7" customClass="HomeMenuViewController" customModule="R_R_BBQ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ly-zc-FTJ">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="243"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-8F-puq">
-                                <rect key="frame" x="16" y="16" width="45" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-8F-puq">
+                                <rect key="frame" x="16" y="16" width="45" height="21.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="R&amp;R-Featured" translatesAutoresizingMaskIntoConstraints="NO" id="HUY-wo-vJs">
-                                <rect key="frame" x="0.0" y="45" width="374" height="198"/>
+                                <rect key="frame" x="0.0" y="53.5" width="374" height="189.5"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="HUY-wo-vJs" firstAttribute="top" secondItem="a1g-8F-puq" secondAttribute="bottom" constant="8" id="5pi-sa-Zwe"/>
+                            <constraint firstItem="HUY-wo-vJs" firstAttribute="top" secondItem="a1g-8F-puq" secondAttribute="bottom" constant="16" id="5pi-sa-Zwe"/>
                             <constraint firstItem="a1g-8F-puq" firstAttribute="top" secondItem="5ly-zc-FTJ" secondAttribute="top" constant="16" id="Uxo-oN-gjW"/>
                             <constraint firstAttribute="trailing" secondItem="HUY-wo-vJs" secondAttribute="trailing" id="XAL-TL-48w"/>
                             <constraint firstItem="a1g-8F-puq" firstAttribute="leading" secondItem="5ly-zc-FTJ" secondAttribute="leading" constant="16" id="hq9-go-aCA"/>
                             <constraint firstItem="HUY-wo-vJs" firstAttribute="leading" secondItem="5ly-zc-FTJ" secondAttribute="leading" id="i6P-xN-tyP"/>
                             <constraint firstAttribute="bottom" secondItem="HUY-wo-vJs" secondAttribute="bottom" id="zA1-hB-J4m"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="86C-fk-wy9"/>
                     </view>
+                    <connections>
+                        <outlet property="menuImageView" destination="HUY-wo-vJs" id="g3q-yv-LeL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOq-zW-fm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2455" y="-785"/>
         </scene>
-        <!--View Controller-->
+        <!--Home Catering View Controller-->
         <scene sceneID="DL3-vy-ii0">
             <objects>
-                <viewController id="vu4-fv-GQ7" sceneMemberID="viewController">
+                <viewController id="vu4-fv-GQ7" customClass="HomeCateringViewController" customModule="R_R_BBQ" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kTO-yl-GQa">
                         <rect key="frame" x="0.0" y="0.0" width="374" height="243"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Db3-gG-6sF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="Db3-gG-6sF">
                                 <rect key="frame" x="16" y="16" width="69" height="20.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="R&amp;R-Featured" translatesAutoresizingMaskIntoConstraints="NO" id="Z3J-QH-GVi">
-                                <rect key="frame" x="0.0" y="44.5" width="374" height="198.5"/>
+                                <rect key="frame" x="0.0" y="52.5" width="374" height="190.5"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -154,9 +160,13 @@
                             <constraint firstAttribute="trailing" secondItem="Z3J-QH-GVi" secondAttribute="trailing" id="XEK-1o-Pwg"/>
                             <constraint firstItem="Db3-gG-6sF" firstAttribute="leading" secondItem="kTO-yl-GQa" secondAttribute="leading" constant="16" id="XmX-hD-oTa"/>
                             <constraint firstItem="Db3-gG-6sF" firstAttribute="top" secondItem="kTO-yl-GQa" secondAttribute="top" constant="16" id="YSc-GX-CLR"/>
-                            <constraint firstItem="Z3J-QH-GVi" firstAttribute="top" secondItem="Db3-gG-6sF" secondAttribute="bottom" constant="8" id="wvR-H2-GxR"/>
+                            <constraint firstItem="Z3J-QH-GVi" firstAttribute="top" secondItem="Db3-gG-6sF" secondAttribute="bottom" constant="16" id="wvR-H2-GxR"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="VFU-bR-x5k"/>
                     </view>
+                    <connections>
+                        <outlet property="cateringImageView" destination="Z3J-QH-GVi" id="R9J-Wa-HMB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UCU-sx-LOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

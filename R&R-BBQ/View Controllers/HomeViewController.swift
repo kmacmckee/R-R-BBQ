@@ -15,14 +15,14 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var homeImageView: UIImageView!
     
     @IBOutlet weak var firstContentView: UIView!
-    
+
     @IBOutlet weak var secondContentView: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
     }
     
 

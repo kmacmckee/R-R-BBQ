@@ -14,6 +14,9 @@
 		C4956F99239B3E1300BF0B45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4956F97239B3E1300BF0B45 /* LaunchScreen.storyboard */; };
 		C4956FA4239B3E1300BF0B45 /* R_R_BBQTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956FA3239B3E1300BF0B45 /* R_R_BBQTests.swift */; };
 		C4956FAF239B401C00BF0B45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956FAE239B401C00BF0B45 /* HomeViewController.swift */; };
+		C4956FB1239B4B5900BF0B45 /* UIImageView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956FB0239B4B5900BF0B45 /* UIImageView+Shadow.swift */; };
+		C4956FB8239B4E4100BF0B45 /* HomeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956FB7239B4E4100BF0B45 /* HomeMenuViewController.swift */; };
+		C4956FBA239B4E4C00BF0B45 /* HomeCateringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956FB9239B4E4C00BF0B45 /* HomeCateringViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		C4956FA3239B3E1300BF0B45 /* R_R_BBQTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_R_BBQTests.swift; sourceTree = "<group>"; };
 		C4956FA5239B3E1300BF0B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4956FAE239B401C00BF0B45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C4956FB0239B4B5900BF0B45 /* UIImageView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Shadow.swift"; sourceTree = "<group>"; };
+		C4956FB7239B4E4100BF0B45 /* HomeMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuViewController.swift; sourceTree = "<group>"; };
+		C4956FB9239B4E4C00BF0B45 /* HomeCateringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCateringViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +88,8 @@
 				C4956F8C239B3E1200BF0B45 /* AppDelegate.swift */,
 				C4956F8E239B3E1200BF0B45 /* SceneDelegate.swift */,
 				C4956F92239B3E1200BF0B45 /* Main.storyboard */,
-				C4956FAE239B401C00BF0B45 /* HomeViewController.swift */,
+				C4956FB6239B4D1000BF0B45 /* View Controllers */,
+				C4956FB0239B4B5900BF0B45 /* UIImageView+Shadow.swift */,
 				C4956F95239B3E1300BF0B45 /* Assets.xcassets */,
 				C4956F97239B3E1300BF0B45 /* LaunchScreen.storyboard */,
 				C4956F9A239B3E1300BF0B45 /* Info.plist */,
@@ -97,6 +104,16 @@
 				C4956FA5239B3E1300BF0B45 /* Info.plist */,
 			);
 			path = "R&R-BBQTests";
+			sourceTree = "<group>";
+		};
+		C4956FB6239B4D1000BF0B45 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4956FAE239B401C00BF0B45 /* HomeViewController.swift */,
+				C4956FB7239B4E4100BF0B45 /* HomeMenuViewController.swift */,
+				C4956FB9239B4E4C00BF0B45 /* HomeCateringViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4956FBA239B4E4C00BF0B45 /* HomeCateringViewController.swift in Sources */,
+				C4956FB1239B4B5900BF0B45 /* UIImageView+Shadow.swift in Sources */,
 				C4956F8D239B3E1200BF0B45 /* AppDelegate.swift in Sources */,
 				C4956F8F239B3E1200BF0B45 /* SceneDelegate.swift in Sources */,
 				C4956FAF239B401C00BF0B45 /* HomeViewController.swift in Sources */,
+				C4956FB8239B4E4100BF0B45 /* HomeMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
