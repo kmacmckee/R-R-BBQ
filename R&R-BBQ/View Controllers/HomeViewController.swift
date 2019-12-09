@@ -13,16 +13,32 @@ class HomeViewController: UIViewController {
     
     
     @IBOutlet weak var homeImageView: UIImageView!
-    
-    @IBOutlet weak var firstContentView: UIView!
 
-    @IBOutlet weak var secondContentView: UIView!
+    @IBOutlet weak var menuUIView: UIView!
+    @IBOutlet weak var cateringUIView: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let backgroundImageView = UIImageView(image: UIImage(named: "R&R-whiteBackground"))
+        backgroundImageView.frame = view.frame
+        backgroundImageView.contentMode = .scaleAspectFill
+        view.addSubview(backgroundImageView)
+        view.sendSubviewToBack(backgroundImageView)
+        
+        
+        setShadow(view: menuUIView)
+        setShadow(view: cateringUIView)
 
+    }
+    
+    func setShadow(view: UIView) {
+        view.layer.shadowColor = UIColor.black.cgColor
+        view.layer.shadowOffset = CGSize(width: 0, height: 0)
+        view.layer.shadowOpacity = 0.6
+        view.layer.shadowRadius = 8
+        view.clipsToBounds = false
     }
     
 

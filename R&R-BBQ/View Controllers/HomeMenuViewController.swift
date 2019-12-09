@@ -11,11 +11,15 @@ import UIKit
 class HomeMenuViewController: UIViewController {
 
     
+
     @IBOutlet weak var menuImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         styleImageView()
+        
+        
+        
     }
     
     func styleImageView() {
