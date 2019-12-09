@@ -11,31 +11,20 @@ import UIKit
 class HomeCateringViewController: UIViewController {
 
 
-    @IBOutlet weak var cateringView: UIView!
+    @IBOutlet weak var cateringImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        styleImage()
+        styleImageView()
     }
     
-    func styleImage() {
-        guard let outerView = cateringView else { return }
-        outerView.clipsToBounds = false
-        outerView.layer.shadowColor = UIColor.black.cgColor
-        outerView.layer.shadowOpacity = 1
-        outerView.layer.shadowOffset = CGSize.zero
-        outerView.layer.shadowRadius = 10
-        outerView.layer.shadowPath = UIBezierPath(roundedRect: outerView.bounds, cornerRadius: 10).cgPath
-        
-        let myImage = UIImageView(frame: outerView.bounds)
-        myImage.image = UIImage(named: "R&R-Featured")
-        myImage.layer.contentsGravity = .resizeAspectFill
-        myImage.layer.cornerRadius = 10
-        myImage.clipsToBounds = true
-        
-        outerView.addSubview(myImage)
-        
+    func styleImageView() {
+        cateringImageView.image = UIImage(named: "R&R-Featured")
+        cateringImageView.layer.contentsGravity = .resizeAspectFill
+        cateringImageView.layer.cornerRadius = 10
+        cateringImageView.clipsToBounds = true
     }
+    
     
 
     /*
