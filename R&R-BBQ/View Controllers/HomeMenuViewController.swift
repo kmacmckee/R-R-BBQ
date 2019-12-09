@@ -13,8 +13,15 @@ class HomeMenuViewController: UIViewController {
     
     @IBOutlet weak var menuImageView: UIImageView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        menuImageView.image = UIImage(named: "R&R-Featured")
+        menuImageView.layer.contentsGravity = .resizeAspectFill
+        menuImageView.layer.cornerRadius = 10
+        menuImageView.clipsToBounds = true
+        
     }
     
     

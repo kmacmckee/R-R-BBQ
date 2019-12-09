@@ -105,29 +105,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="374" height="243"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-8F-puq">
-                                <rect key="frame" x="16" y="16" width="45" height="21.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9QQ-A8-HeJ">
-                                <rect key="frame" x="0.0" y="60" width="374" height="183"/>
-                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="td4-0k-Aum">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="243"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1g-8F-puq">
+                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1dZ-YH-ORt">
+                                        <rect key="frame" x="0.0" y="48.5" width="374" height="194.5"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="bQX-sK-mRr"/>
+                                    <constraint firstItem="a1g-8F-puq" firstAttribute="width" secondItem="td4-0k-Aum" secondAttribute="width" multiplier="1/4" id="xTh-3f-1t7"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="86C-fk-wy9" firstAttribute="bottom" secondItem="9QQ-A8-HeJ" secondAttribute="bottom" id="8JX-Te-m5Z"/>
-                            <constraint firstItem="86C-fk-wy9" firstAttribute="trailing" secondItem="9QQ-A8-HeJ" secondAttribute="trailing" id="KAV-6q-PgF"/>
-                            <constraint firstItem="9QQ-A8-HeJ" firstAttribute="top" secondItem="86C-fk-wy9" secondAttribute="top" constant="16" id="M0e-pX-uKc"/>
-                            <constraint firstItem="9QQ-A8-HeJ" firstAttribute="leading" secondItem="86C-fk-wy9" secondAttribute="leading" id="Q0s-oE-CDf"/>
-                            <constraint firstItem="a1g-8F-puq" firstAttribute="top" secondItem="5ly-zc-FTJ" secondAttribute="top" constant="16" id="Uxo-oN-gjW"/>
-                            <constraint firstItem="a1g-8F-puq" firstAttribute="leading" secondItem="5ly-zc-FTJ" secondAttribute="leading" constant="16" id="hq9-go-aCA"/>
+                            <constraint firstItem="1dZ-YH-ORt" firstAttribute="height" secondItem="5ly-zc-FTJ" secondAttribute="height" multiplier="4/5" id="7b7-Yk-582"/>
+                            <constraint firstAttribute="trailing" secondItem="td4-0k-Aum" secondAttribute="trailing" id="DTT-ek-Fk3"/>
+                            <constraint firstItem="td4-0k-Aum" firstAttribute="leading" secondItem="86C-fk-wy9" secondAttribute="leading" id="H1N-O5-XRf"/>
+                            <constraint firstItem="td4-0k-Aum" firstAttribute="top" secondItem="5ly-zc-FTJ" secondAttribute="top" id="m9c-eg-cAY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="86C-fk-wy9"/>
                     </view>
+                    <connections>
+                        <outlet property="menuImageView" destination="1dZ-YH-ORt" id="M0c-wI-cTn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOq-zW-fm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
