@@ -27,12 +27,13 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let backgroundImageView = UIImageView(image: UIImage(named: "R&R-whiteBackground"))
+        let backgroundImageView = UIImageView(image: UIImage(named: "R&R-WhiteBackground"))
         backgroundImageView.frame = view.frame
         backgroundImageView.contentMode = .scaleAspectFill
         view.addSubview(backgroundImageView)
         view.sendSubviewToBack(backgroundImageView)
         
+        styleButtons()
     }
     
 
@@ -44,10 +45,13 @@ class MenuViewController: UIViewController {
         let buttons = [platesButton, sandwichesButton, burgersButton, saladsButton, wingsButton, favoritesButton, sidesButton, kidsButton]
         
         for button in buttons {
-            button!.layer.cornerRadius = 8
+            button!.layer.cornerRadius = 12
             button!.clipsToBounds = true
             
-            button!.layer.borderWidth = 1
+            button!.layer.borderWidth = 2
+            button!.layer.borderColor = UIColor.black.cgColor
+            
+            button!.backgroundColor = UIColor.lightGray
             
         }
         

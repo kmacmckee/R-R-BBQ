@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dF5-4e-LMa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dF5-4e-LMa">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,6 +20,7 @@
                     <connections>
                         <segue destination="SS1-va-94C" kind="relationship" relationship="viewControllers" id="Fda-q9-eLp"/>
                         <segue destination="wML-QX-8k5" kind="relationship" relationship="viewControllers" id="iHZ-3P-RvV"/>
+                        <segue destination="ylB-Am-qPr" kind="relationship" relationship="viewControllers" id="1Fl-fg-Aqf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYo-Ff-QUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -33,110 +34,10 @@
                     <view key="view" contentMode="scaleToFill" id="5o8-Kf-O0v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0LL-vi-sq3">
-                                <rect key="frame" x="8" y="96" width="398" height="74.5"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="LFA-aN-LUL">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="33.5"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U69-l2-Wc9">
-                                                <rect key="frame" x="0.0" y="0.0" width="92" height="33.5"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Plates">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPS-SX-rCX">
-                                                <rect key="frame" x="102" y="0.0" width="92" height="33.5"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Sandwiches">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5f-LK-MIS">
-                                                <rect key="frame" x="204" y="0.0" width="92" height="33.5"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Burgers">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axn-Ue-2s1">
-                                                <rect key="frame" x="306" y="0.0" width="92" height="33.5"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Salads">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dX8-Cg-LEZ">
-                                        <rect key="frame" x="0.0" y="41.5" width="398" height="33"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQ2-i3-X5p">
-                                                <rect key="frame" x="0.0" y="0.0" width="92" height="33"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Wings">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acM-Ut-25c">
-                                                <rect key="frame" x="102" y="0.0" width="92" height="33"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Favorites">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iA8-o5-ges">
-                                                <rect key="frame" x="204" y="0.0" width="92" height="33"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Sides">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXd-JV-zU9">
-                                                <rect key="frame" x="306" y="0.0" width="92" height="33"/>
-                                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Kids">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Of-eF-eRf">
-                                <rect key="frame" x="16" y="187" width="382" height="610"/>
-                                <connections>
-                                    <segue destination="Z9B-eS-9ft" kind="embed" id="CQS-p6-EBM"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="7Of-eF-eRf" firstAttribute="leading" secondItem="Zuj-aJ-pXm" secondAttribute="leading" constant="16" id="9Sc-bY-j2s"/>
-                            <constraint firstItem="Zuj-aJ-pXm" firstAttribute="trailing" secondItem="7Of-eF-eRf" secondAttribute="trailing" constant="16" id="GBm-FG-nUt"/>
-                            <constraint firstItem="7Of-eF-eRf" firstAttribute="top" secondItem="0LL-vi-sq3" secondAttribute="bottom" constant="16" id="RQr-rm-NZX"/>
-                            <constraint firstItem="Zuj-aJ-pXm" firstAttribute="bottom" secondItem="7Of-eF-eRf" secondAttribute="bottom" constant="16" id="lLd-Gt-g7h"/>
-                            <constraint firstItem="0LL-vi-sq3" firstAttribute="centerX" secondItem="Zuj-aJ-pXm" secondAttribute="centerX" id="nXw-CS-NwO"/>
-                            <constraint firstItem="Zuj-aJ-pXm" firstAttribute="trailing" secondItem="0LL-vi-sq3" secondAttribute="trailing" constant="8" id="oau-9d-oDK"/>
-                            <constraint firstItem="0LL-vi-sq3" firstAttribute="top" secondItem="Zuj-aJ-pXm" secondAttribute="top" constant="8" id="rVS-l2-LnB"/>
-                            <constraint firstItem="0LL-vi-sq3" firstAttribute="height" secondItem="5o8-Kf-O0v" secondAttribute="height" multiplier="1/12" id="x7f-vF-8DX"/>
-                            <constraint firstItem="0LL-vi-sq3" firstAttribute="leading" secondItem="Zuj-aJ-pXm" secondAttribute="leading" constant="8" id="yLI-Cl-ovl"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zuj-aJ-pXm"/>
                     </view>
                     <navigationItem key="navigationItem" title="MENU" id="wZW-Yi-Wub"/>
-                    <connections>
-                        <outlet property="burgersButton" destination="v5f-LK-MIS" id="AVD-ec-6Oe"/>
-                        <outlet property="favoritesButton" destination="acM-Ut-25c" id="ffc-QZ-Uq1"/>
-                        <outlet property="kidsButton" destination="JXd-JV-zU9" id="CGV-QG-g27"/>
-                        <outlet property="platesButton" destination="U69-l2-Wc9" id="Wf0-J4-Gen"/>
-                        <outlet property="saladsButton" destination="axn-Ue-2s1" id="4zh-V2-QXW"/>
-                        <outlet property="sandwichesButton" destination="SPS-SX-rCX" id="pqi-Od-cIo"/>
-                        <outlet property="sidesButton" destination="iA8-o5-ges" id="c7Z-7E-r8e"/>
-                        <outlet property="wingsButton" destination="LQ2-i3-X5p" id="J60-Ld-7rH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdu-kA-dB8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -277,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfc-b8-BnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3420" y="22"/>
+            <point key="canvasLocation" x="2868" y="7"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="ago-cb-M35">
@@ -294,13 +195,13 @@
                                 <rect key="frame" x="32" y="299" width="350" height="482"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQ5-gu-OQD">
-                                        <rect key="frame" x="0.0" y="-12" width="350" height="221"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="221"/>
                                         <connections>
                                             <segue destination="dAS-BA-BuZ" kind="embed" id="bXW-FB-v81"/>
                                         </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O5C-ew-obH">
-                                        <rect key="frame" x="0.0" y="249" width="350" height="221"/>
+                                        <rect key="frame" x="0.0" y="261" width="350" height="221"/>
                                         <connections>
                                             <segue destination="xEh-28-sRe" kind="embed" id="5O7-YW-fiF"/>
                                         </connections>
@@ -370,19 +271,21 @@
             </objects>
             <point key="canvasLocation" x="863.768115942029" y="6.6964285714285712"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="SRu-97-esv">
+        <!--Catering-->
+        <scene sceneID="gEC-jR-jaG">
             <objects>
-                <viewController id="Z9B-eS-9ft" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NWF-dI-mBo">
-                        <rect key="frame" x="0.0" y="0.0" width="382" height="610"/>
+                <viewController id="ylB-Am-qPr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DKu-9b-iaM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zkz-xf-r5T"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Catering" image="paperplane" catalog="system" id="kg2-lu-dWm"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ueq-D3-gA0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WBZ-23-y1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2480" y="7"/>
+            <point key="canvasLocation" x="864" y="756"/>
         </scene>
         <!--Home Menu View Controller-->
         <scene sceneID="qvm-vU-odW">
@@ -411,6 +314,7 @@
                             <constraint firstAttribute="trailing" secondItem="s3b-uL-6fx" secondAttribute="trailing" id="pA8-yL-URj"/>
                             <constraint firstItem="s3b-uL-6fx" firstAttribute="top" secondItem="nyR-a3-ukH" secondAttribute="top" id="s3r-hh-XcP"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="MEW-9A-NGy"/>
                     </view>
                     <connections>
                         <outlet property="menuImageView" destination="s3b-uL-6fx" id="coA-1i-2XB"/>
@@ -447,6 +351,7 @@
                             <constraint firstItem="LCK-rq-ReU" firstAttribute="leading" secondItem="57Q-zq-O1S" secondAttribute="leading" constant="16" id="Kis-aR-Qul"/>
                             <constraint firstAttribute="trailing" secondItem="DUr-HS-nZi" secondAttribute="trailing" id="zDs-DU-Sux"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="2oP-ST-niI"/>
                     </view>
                     <connections>
                         <outlet property="cateringImageView" destination="DUr-HS-nZi" id="oAG-3T-vtR"/>
@@ -460,6 +365,7 @@
     <resources>
         <image name="R&amp;R-Ribbs" width="2300" height="1247"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
+        <image name="paperplane" catalog="system" width="64" height="60"/>
         <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
     </resources>
 </document>

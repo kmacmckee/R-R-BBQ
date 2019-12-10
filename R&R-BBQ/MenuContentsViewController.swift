@@ -1,30 +1,23 @@
 //
-//  HomeCateringViewController.swift
+//  MenuContentsViewController.swift
 //  R&R-BBQ
 //
-//  Created by Kobe McKee on 12/6/19.
+//  Created by Kobe McKee on 12/9/19.
 //  Copyright © 2019 Kobe McKee. All rights reserved.
 //
 
 import UIKit
 
-class HomeCateringViewController: UIViewController {
+class MenuContentsViewController: UIViewController {
 
-
-    @IBOutlet weak var cateringImageView: UIImageView!
+    
+    @IBOutlet weak var menuItemImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        styleImageView()
+
+        menuItemImageView.image = UIImage(named: "R&R-PlateCombo")
     }
-    
-    func styleImageView() {
-        cateringImageView.image = UIImage(named: "R&R-Featured")
-        cateringImageView.layer.contentsGravity = .resizeAspectFill
-        cateringImageView.layer.cornerRadius = 15
-        cateringImageView.clipsToBounds = true
-    }
-    
     
 
     /*

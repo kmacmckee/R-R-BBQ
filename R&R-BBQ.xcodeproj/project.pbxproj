@@ -17,6 +17,7 @@
 		C4956FB8239B4E4100BF0B45 /* HomeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956FB7239B4E4100BF0B45 /* HomeMenuViewController.swift */; };
 		C4956FBA239B4E4C00BF0B45 /* HomeCateringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956FB9239B4E4C00BF0B45 /* HomeCateringViewController.swift */; };
 		C49FA51B239EAE7600C68ADF /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FA51A239EAE7600C68ADF /* MenuViewController.swift */; };
+		C49FA51D239EC87B00C68ADF /* MenuContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49FA51C239EC87B00C68ADF /* MenuContentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C4956FB7239B4E4100BF0B45 /* HomeMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuViewController.swift; sourceTree = "<group>"; };
 		C4956FB9239B4E4C00BF0B45 /* HomeCateringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCateringViewController.swift; sourceTree = "<group>"; };
 		C49FA51A239EAE7600C68ADF /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		C49FA51C239EC87B00C68ADF /* MenuContentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuContentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				C4956F8E239B3E1200BF0B45 /* SceneDelegate.swift */,
 				C4956F92239B3E1200BF0B45 /* Main.storyboard */,
 				C49FA51A239EAE7600C68ADF /* MenuViewController.swift */,
+				C49FA51C239EC87B00C68ADF /* MenuContentsViewController.swift */,
 				C4956FB6239B4D1000BF0B45 /* View Controllers */,
 				C4956F95239B3E1300BF0B45 /* Assets.xcassets */,
 				C4956F97239B3E1300BF0B45 /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4956FBA239B4E4C00BF0B45 /* HomeCateringViewController.swift in Sources */,
+				C49FA51D239EC87B00C68ADF /* MenuContentsViewController.swift in Sources */,
 				C49FA51B239EAE7600C68ADF /* MenuViewController.swift in Sources */,
 				C4956F8D239B3E1200BF0B45 /* AppDelegate.swift in Sources */,
 				C4956F8F239B3E1200BF0B45 /* SceneDelegate.swift in Sources */,

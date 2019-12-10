@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let backgroundImageView = UIImageView(image: UIImage(named: "R&R-whiteBackground"))
+        let backgroundImageView = UIImageView(image: UIImage(named: "R&R-WhiteBackground"))
         backgroundImageView.frame = view.frame
         backgroundImageView.contentMode = .scaleAspectFill
         view.addSubview(backgroundImageView)
