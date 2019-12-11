@@ -13,7 +13,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
    
     @IBOutlet weak var topBannerView: UIView!
     @IBOutlet weak var menuTableView: UITableView!
-    
+    var selectedMenuSection: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,16 +55,25 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let menuSection = menuSections[indexPath.row]
+        selectedMenuSection = menuSection
+        
+        self.performSegue(withIdentifier: "toMenuItems", sender: self)
+    }
+    
     
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "toMenuItems" {
+            let destinationVC = segue.destination as! MenuItemsTableViewController
+            destinationVC.menuSection = selectedMenuSection
+        }
+        
     }
-    */
+    
 
 }
