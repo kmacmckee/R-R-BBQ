@@ -22,11 +22,22 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         menuTableView.dataSource = self
     }
     
-
+    let menuSections = ["Plate Combos",
+                        "Sandwiches",
+                        "Burgers",
+                        "Salads",
+                        "Wings",
+                        "Favorites",
+                        "Sides",
+                        "Kids",
+                        "Drinks",
+                        "Deserts",
+                        "Daily Specials",
+                        "By The Pound"]
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return menuSections.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
