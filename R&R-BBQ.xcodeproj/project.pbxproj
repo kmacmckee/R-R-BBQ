@@ -10,6 +10,8 @@
 		C493464923A19D4400291BA1 /* MenuSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493464823A19D4400291BA1 /* MenuSectionTableViewCell.swift */; };
 		C493464B23A1AB0800291BA1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493464A23A1AB0800291BA1 /* MenuItem.swift */; };
 		C493464D23A1AC5200291BA1 /* MenuItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493464C23A1AC5200291BA1 /* MenuItemsTableViewController.swift */; };
+		C493465023A1AE6E00291BA1 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493464F23A1AE6E00291BA1 /* MenuSection.swift */; };
+		C493465223A1AECF00291BA1 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493465123A1AECF00291BA1 /* MenuController.swift */; };
 		C4956F8D239B3E1200BF0B45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956F8C239B3E1200BF0B45 /* AppDelegate.swift */; };
 		C4956F8F239B3E1200BF0B45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956F8E239B3E1200BF0B45 /* SceneDelegate.swift */; };
 		C4956F94239B3E1200BF0B45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4956F92239B3E1200BF0B45 /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 		C493464823A19D4400291BA1 /* MenuSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSectionTableViewCell.swift; sourceTree = "<group>"; };
 		C493464A23A1AB0800291BA1 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		C493464C23A1AC5200291BA1 /* MenuItemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemsTableViewController.swift; sourceTree = "<group>"; };
+		C493464F23A1AE6E00291BA1 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
+		C493465123A1AECF00291BA1 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		C4956F89239B3E1200BF0B45 /* R&R-BBQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R&R-BBQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4956F8C239B3E1200BF0B45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4956F8E239B3E1200BF0B45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C493464E23A1AE5900291BA1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C493464A23A1AB0800291BA1 /* MenuItem.swift */,
+				C493464F23A1AE6E00291BA1 /* MenuSection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C4956F80239B3E1200BF0B45 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +110,8 @@
 				C49FA51A239EAE7600C68ADF /* MenuViewController.swift */,
 				C493464823A19D4400291BA1 /* MenuSectionTableViewCell.swift */,
 				C493464C23A1AC5200291BA1 /* MenuItemsTableViewController.swift */,
-				C493464A23A1AB0800291BA1 /* MenuItem.swift */,
+				C493465123A1AECF00291BA1 /* MenuController.swift */,
+				C493464E23A1AE5900291BA1 /* Models */,
 				C4956FB6239B4D1000BF0B45 /* View Controllers */,
 				C4956F95239B3E1300BF0B45 /* Assets.xcassets */,
 				C4956F97239B3E1300BF0B45 /* LaunchScreen.storyboard */,
@@ -226,10 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C493465023A1AE6E00291BA1 /* MenuSection.swift in Sources */,
 				C493464D23A1AC5200291BA1 /* MenuItemsTableViewController.swift in Sources */,
 				C4956FBA239B4E4C00BF0B45 /* HomeCateringViewController.swift in Sources */,
 				C49FA51B239EAE7600C68ADF /* MenuViewController.swift in Sources */,
 				C4956F8D239B3E1200BF0B45 /* AppDelegate.swift in Sources */,
+				C493465223A1AECF00291BA1 /* MenuController.swift in Sources */,
 				C4956F8F239B3E1200BF0B45 /* SceneDelegate.swift in Sources */,
 				C4956FAF239B401C00BF0B45 /* HomeViewController.swift in Sources */,
 				C493464B23A1AB0800291BA1 /* MenuItem.swift in Sources */,
