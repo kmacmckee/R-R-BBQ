@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C493464923A19D4400291BA1 /* MenuSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493464823A19D4400291BA1 /* MenuSectionTableViewCell.swift */; };
+		C493464B23A1AB0800291BA1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493464A23A1AB0800291BA1 /* MenuItem.swift */; };
 		C4956F8D239B3E1200BF0B45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956F8C239B3E1200BF0B45 /* AppDelegate.swift */; };
 		C4956F8F239B3E1200BF0B45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4956F8E239B3E1200BF0B45 /* SceneDelegate.swift */; };
 		C4956F94239B3E1200BF0B45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4956F92239B3E1200BF0B45 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		C493464823A19D4400291BA1 /* MenuSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSectionTableViewCell.swift; sourceTree = "<group>"; };
+		C493464A23A1AB0800291BA1 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		C4956F89239B3E1200BF0B45 /* R&R-BBQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R&R-BBQ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4956F8C239B3E1200BF0B45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4956F8E239B3E1200BF0B45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				C4956F92239B3E1200BF0B45 /* Main.storyboard */,
 				C49FA51A239EAE7600C68ADF /* MenuViewController.swift */,
 				C493464823A19D4400291BA1 /* MenuSectionTableViewCell.swift */,
+				C493464A23A1AB0800291BA1 /* MenuItem.swift */,
 				C4956FB6239B4D1000BF0B45 /* View Controllers */,
 				C4956F95239B3E1300BF0B45 /* Assets.xcassets */,
 				C4956F97239B3E1300BF0B45 /* LaunchScreen.storyboard */,
@@ -225,6 +228,7 @@
 				C4956F8D239B3E1200BF0B45 /* AppDelegate.swift in Sources */,
 				C4956F8F239B3E1200BF0B45 /* SceneDelegate.swift in Sources */,
 				C4956FAF239B401C00BF0B45 /* HomeViewController.swift in Sources */,
+				C493464B23A1AB0800291BA1 /* MenuItem.swift in Sources */,
 				C493464923A19D4400291BA1 /* MenuSectionTableViewCell.swift in Sources */,
 				C4956FB8239B4E4100BF0B45 /* HomeMenuViewController.swift in Sources */,
 			);
