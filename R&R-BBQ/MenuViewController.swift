@@ -20,6 +20,10 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         menuTableView.delegate = self
         menuTableView.dataSource = self
+        
+        menuTableView.rowHeight = menuTableView.frame.height / 5
+        
+        print(menuTableView.rowHeight)
     }
     
     let menuSections = ["Plate Combos",
@@ -41,7 +45,13 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuSection") as! MenuSectionTableViewCell
+        
+        let menuItem = menuSections[indexPath.row]
+        cell.menuSectionLabel.text = menuItem
+        cell.menuSectionImageView.image = UIImage(named: "R&R-Ribs")!
+        return cell
     }
     
     
