@@ -34,10 +34,47 @@
                     <view key="view" contentMode="scaleToFill" id="5o8-Kf-O0v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gur-Uc-Uco">
+                                <rect key="frame" x="0.0" y="88" width="414" height="48"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="ubp-Ub-gNz"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l2A-ke-l6z">
+                                <rect key="frame" x="0.0" y="144" width="414" height="669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="dPg-rE-jcv">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dPg-rE-jcv" id="Y6n-OG-Aic">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l2A-ke-l6z" firstAttribute="top" secondItem="gur-Uc-Uco" secondAttribute="bottom" constant="8" symbolic="YES" id="5e5-XY-9bh"/>
+                            <constraint firstItem="Zuj-aJ-pXm" firstAttribute="bottom" secondItem="l2A-ke-l6z" secondAttribute="bottom" id="DYG-qm-73i"/>
+                            <constraint firstItem="gur-Uc-Uco" firstAttribute="top" secondItem="Zuj-aJ-pXm" secondAttribute="top" id="JGh-J9-8Gb"/>
+                            <constraint firstItem="Zuj-aJ-pXm" firstAttribute="trailing" secondItem="gur-Uc-Uco" secondAttribute="trailing" id="Prb-fu-QM5"/>
+                            <constraint firstItem="l2A-ke-l6z" firstAttribute="leading" secondItem="Zuj-aJ-pXm" secondAttribute="leading" id="U6p-nK-wFP"/>
+                            <constraint firstItem="gur-Uc-Uco" firstAttribute="leading" secondItem="Zuj-aJ-pXm" secondAttribute="leading" id="hXu-0s-U3V"/>
+                            <constraint firstItem="Zuj-aJ-pXm" firstAttribute="trailing" secondItem="l2A-ke-l6z" secondAttribute="trailing" id="rYL-ex-PwX"/>
+                            <constraint firstItem="l2A-ke-l6z" firstAttribute="top" secondItem="gur-Uc-Uco" secondAttribute="bottom" constant="8" symbolic="YES" id="war-HY-fsA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zuj-aJ-pXm"/>
                     </view>
                     <navigationItem key="navigationItem" title="MENU" id="wZW-Yi-Wub"/>
+                    <connections>
+                        <outlet property="menuTableView" destination="l2A-ke-l6z" id="P9w-p5-f0T"/>
+                        <outlet property="topBannerView" destination="gur-Uc-Uco" id="uUj-9u-yrr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdu-kA-dB8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,56 +8,30 @@
 
 import UIKit
 
-class MenuViewController: UIViewController {
-
-    // Buttons
-    @IBOutlet weak var platesButton: UIButton!
-    @IBOutlet weak var sandwichesButton: UIButton!
-    @IBOutlet weak var burgersButton: UIButton!
-    @IBOutlet weak var saladsButton: UIButton!
-    @IBOutlet weak var wingsButton: UIButton!
-    @IBOutlet weak var favoritesButton: UIButton!
-    @IBOutlet weak var sidesButton: UIButton!
-    @IBOutlet weak var kidsButton: UIButton!
+class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+   
+    @IBOutlet weak var topBannerView: UIView!
+    @IBOutlet weak var menuTableView: UITableView!
     
 
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let backgroundImageView = UIImageView(image: UIImage(named: "R&R-WhiteBackground"))
-        backgroundImageView.frame = view.frame
-        backgroundImageView.contentMode = .scaleAspectFill
-        view.addSubview(backgroundImageView)
-        view.sendSubviewToBack(backgroundImageView)
-        
-        styleButtons()
+
+        menuTableView.delegate = self
+        menuTableView.dataSource = self
     }
     
 
     
     
-    
-    
-    func styleButtons() {
-        let buttons = [platesButton, sandwichesButton, burgersButton, saladsButton, wingsButton, favoritesButton, sidesButton, kidsButton]
-        
-        for button in buttons {
-            button!.layer.cornerRadius = 12
-            button!.clipsToBounds = true
-            
-            button!.layer.borderWidth = 2
-            button!.layer.borderColor = UIColor.black.cgColor
-            
-            button!.backgroundColor = UIColor.lightGray
-            
-        }
-        
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
     
-    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
     
     
     
