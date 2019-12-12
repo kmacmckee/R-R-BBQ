@@ -10,11 +10,7 @@ import UIKit
 
 class MenuItemsTableViewController: UITableViewController {
 
-    var menuSection: String? {
-        didSet {
-            print(menuSection)
-        }
-    }
+    var menuSection: MenuSection?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,24 +26,24 @@ class MenuItemsTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        guard let section = menuSection else { return 0 }
+        return section.items.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuItem", for: indexPath)
+        guard let section = menuSection else { return UITableViewCell() }
+        let item = section.items[indexPath.row]
+        
+        cell.textLabel?.text = item.name
 
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

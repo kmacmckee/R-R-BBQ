@@ -12,6 +12,10 @@ class MenuController {
     
     var menu: [MenuSection] = []
     
+    
+    init() {
+        self.menu = [plateCombos, sandwiches, burgers, salads, wings, favorites, sides, kidsMenu, drinks, desserts]
+    }
 
     // MARK: - Plate Combos
     var plateCombos = MenuSection(name: "Plate Combos", image: nil, sectionInfo: ["Add a rib for only $2.75"],

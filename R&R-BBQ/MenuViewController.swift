@@ -13,7 +13,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
    
     @IBOutlet weak var topBannerView: UIView!
     @IBOutlet weak var menuTableView: UITableView!
-    var selectedMenuSection: String?
+    var selectedMenuSection: MenuSection?
+    let menuController = MenuController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,37 +27,26 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         print(menuTableView.rowHeight)
     }
     
-    let menuSections = ["Plate Combos",
-                        "Sandwiches",
-                        "Burgers",
-                        "Salads",
-                        "Wings",
-                        "Favorites",
-                        "Sides",
-                        "Kids",
-                        "Drinks",
-                        "Deserts",
-                        "Daily Specials",
-                        "By The Pound"]
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return menuSections.count
+        return menuController.menu.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuSection") as! MenuSectionTableViewCell
         
-        let menuItem = menuSections[indexPath.row]
-        cell.menuSectionLabel.text = menuItem
+        let menuSection = menuController.menu[indexPath.row]
+        cell.menuSectionLabel.text = menuSection.name
         cell.menuSectionImageView.image = UIImage(named: "R&R-Ribs")!
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let menuSection = menuSections[indexPath.row]
+        let menuSection = menuController.menu[indexPath.row]
         selectedMenuSection = menuSection
         
         self.performSegue(withIdentifier: "toMenuItems", sender: self)
