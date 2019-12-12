@@ -23,8 +23,6 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         menuTableView.dataSource = self
         
         menuTableView.rowHeight = menuTableView.frame.height / 5
-        
-        print(menuTableView.rowHeight)
     }
     
     
@@ -59,7 +57,7 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toMenuItems" {
-            let destinationVC = segue.destination as! MenuItemsTableViewController
+            let destinationVC = segue.destination as! MenuItemsViewController
             destinationVC.menuSection = selectedMenuSection
         }
         
