@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     
     
     
+    @IBOutlet weak var homeImageLabel: UILabel!
     @IBOutlet weak var homeImageView: UIImageView!
 
     @IBOutlet weak var menuUIView: UIView!
@@ -26,6 +27,19 @@ class HomeViewController: UIViewController {
         backgroundImageView.contentMode = .scaleAspectFill
         view.addSubview(backgroundImageView)
         view.sendSubviewToBack(backgroundImageView)
+        
+        
+        homeImageLabel.layer.shadowColor = UIColor.black.cgColor
+        homeImageLabel.layer.shadowRadius = 8
+        homeImageLabel.layer.shadowOpacity = 0.6
+        homeImageLabel.layer.shadowOffset = CGSize(width: 4, height: 4)
+        homeImageLabel.layer.masksToBounds = false
+        
+        
+        let iconImageView = UIImageView(image: UIImage(named: "R&R-Icon"))
+        iconImageView.contentMode = .scaleAspectFit
+        
+        self.navigationItem.titleView = iconImageView
         
         
         setShadow(view: menuUIView)
