@@ -85,6 +85,51 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C493465723A2D58B00291BA1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C4956FAE239B401C00BF0B45 /* HomeViewController.swift */,
+				C4956FB7239B4E4100BF0B45 /* HomeMenuViewController.swift */,
+				C4956FB9239B4E4C00BF0B45 /* HomeCateringViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C493465823A2D5A200291BA1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C493465923A2D5B800291BA1 /* Sections */,
+				C493465A23A2D5C900291BA1 /* Items */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		C493465923A2D5B800291BA1 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				C49FA51A239EAE7600C68ADF /* MenuViewController.swift */,
+				C493464823A19D4400291BA1 /* MenuSectionTableViewCell.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		C493465A23A2D5C900291BA1 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				C493465323A2C4AA00291BA1 /* MenuItemsViewController.swift */,
+				C493465523A2C5B500291BA1 /* MenuItemTableViewCell.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		C493465B23A2D61200291BA1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C493465123A1AECF00291BA1 /* MenuController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C4956F80239B3E1200BF0B45 = {
 			isa = PBXGroup;
 			children = (
@@ -109,11 +154,7 @@
 				C4956F8C239B3E1200BF0B45 /* AppDelegate.swift */,
 				C4956F8E239B3E1200BF0B45 /* SceneDelegate.swift */,
 				C4956F92239B3E1200BF0B45 /* Main.storyboard */,
-				C49FA51A239EAE7600C68ADF /* MenuViewController.swift */,
-				C493465523A2C5B500291BA1 /* MenuItemTableViewCell.swift */,
-				C493464823A19D4400291BA1 /* MenuSectionTableViewCell.swift */,
-				C493465323A2C4AA00291BA1 /* MenuItemsViewController.swift */,
-				C493465123A1AECF00291BA1 /* MenuController.swift */,
+				C493465B23A2D61200291BA1 /* Controllers */,
 				C493464E23A1AE5900291BA1 /* Models */,
 				C4956FB6239B4D1000BF0B45 /* View Controllers */,
 				C4956F95239B3E1300BF0B45 /* Assets.xcassets */,
@@ -135,9 +176,8 @@
 		C4956FB6239B4D1000BF0B45 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C4956FAE239B401C00BF0B45 /* HomeViewController.swift */,
-				C4956FB7239B4E4100BF0B45 /* HomeMenuViewController.swift */,
-				C4956FB9239B4E4C00BF0B45 /* HomeCateringViewController.swift */,
+				C493465823A2D5A200291BA1 /* Menu */,
+				C493465723A2D58B00291BA1 /* Home */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
