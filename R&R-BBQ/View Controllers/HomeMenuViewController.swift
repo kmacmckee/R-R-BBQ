@@ -24,7 +24,7 @@ class HomeMenuViewController: UIViewController {
     
     func styleImageView() {
         menuImageView.image = UIImage(named: "R&R-Featured")
-        menuImageView.layer.contentsGravity = .resizeAspectFill
+        menuImageView.contentMode = .scaleAspectFill
         menuImageView.layer.cornerRadius = 15
         menuImageView.clipsToBounds = true
     }

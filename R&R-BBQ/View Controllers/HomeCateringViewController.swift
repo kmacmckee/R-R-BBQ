@@ -20,7 +20,7 @@ class HomeCateringViewController: UIViewController {
     
     func styleImageView() {
         cateringImageView.image = UIImage(named: "R&R-Featured")
-        cateringImageView.layer.contentsGravity = .resizeAspectFill
+        cateringImageView.contentMode = .scaleAspectFill
         cateringImageView.layer.cornerRadius = 15
         cateringImageView.clipsToBounds = true
     }
