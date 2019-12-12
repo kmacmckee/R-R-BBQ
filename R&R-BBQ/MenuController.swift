@@ -40,8 +40,6 @@ class MenuController {
                                                                                       "2 Ribs"]),
         MenuItem(name: "4 Bone Rib Plate", image: nil, price: 12.99, info: nil, options: nil),
         MenuItem(name: "6 Bone Rib Plate", image: nil, price: 16.99, info: nil, options: nil)
-        
-        // TODO: "Add a rib for only 2.75" - For rib plate or meat plate?
     ])
     
     
@@ -151,7 +149,23 @@ class MenuController {
     
     
     // TODO: Daily Specials
+    // Monday - Smoked Bacon-Wrapped Meatloaf with Side - 9.99
+    // Tuesday - Brisket Tacos - 8.50
+    // Wednesday - Smoked Wings (6 Wings with Fries and Drink) - 9.99
+    // Thursday - Caveman Burger - 11.99
+    // Friday - Rib Tips with Fries - 10.50
+    // Saturday - Nachos: Chicken or Pork - 9.99
+    
+    
+    
     
     // TODO: By the Pound
-    
+    // Pulled Pork - 14/lb
+    // Beef Brisket (sliced or chopped) - 18.50/lb
+    // Smoked Sausage - 14/lb
+    // Ribs by the rack - 26 EA
+    // Boneless Chicken Thigh - 14/lb
+    // Smoked Chicken:
+        // 1/4 - 7.50 EA
+        // 1/2 - 7.50 EA
 }
