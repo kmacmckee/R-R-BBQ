@@ -203,6 +203,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6N-LA-ffU">
                                 <rect key="frame" x="161" y="698" width="92" height="30"/>
                                 <state key="normal" title="Add To Order"/>
+                                <connections>
+                                    <action selector="addToOrderPressed:" destination="LD3-Am-Cns" eventType="touchUpInside" id="QzN-kU-Ace"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMK-v6-gog">
                                 <rect key="frame" x="187.5" y="641" width="39" height="21"/>
@@ -246,6 +249,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eth-uN-ol7"/>
                     </view>
+                    <connections>
+                        <outlet property="addToOrderButton" destination="A6N-LA-ffU" id="dU4-7r-wiV"/>
+                        <outlet property="itemImageView" destination="2lP-Rf-3qB" id="beo-7n-f1y"/>
+                        <outlet property="itemInfoLabel" destination="wxE-08-eAH" id="zTo-9o-vFi"/>
+                        <outlet property="itemNameLabel" destination="gXU-iV-VX1" id="xkT-bW-PTe"/>
+                        <outlet property="itemOptionsView" destination="kKH-Po-BEg" id="3nL-1p-wUB"/>
+                        <outlet property="itemPriceLabel" destination="zMK-v6-gog" id="f6u-rE-M1r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDn-X5-kHd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

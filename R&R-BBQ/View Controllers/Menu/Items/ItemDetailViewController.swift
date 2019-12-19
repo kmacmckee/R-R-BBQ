@@ -12,9 +12,19 @@ class ItemDetailViewController: UIViewController {
 
     
     
+    @IBOutlet weak var itemImageView: UIImageView!
+    
+    @IBOutlet weak var itemNameLabel: UILabel!
+    
+    @IBOutlet weak var itemInfoLabel: UILabel!
     
     
+    @IBOutlet weak var itemOptionsView: UIView!
     
+    
+    @IBOutlet weak var itemPriceLabel: UILabel!
+    
+    @IBOutlet weak var addToOrderButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +33,11 @@ class ItemDetailViewController: UIViewController {
     }
     
 
+    @IBAction func addToOrderPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    
     /*
     // MARK: - Navigation
 
