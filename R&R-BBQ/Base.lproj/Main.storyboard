@@ -176,7 +176,7 @@
                     <connections>
                         <outlet property="menuItemsTableView" destination="cuG-QS-DWk" id="f79-cz-bMJ"/>
                         <outlet property="menuSectionImageView" destination="lCu-Wg-hdP" id="612-n2-ca3"/>
-                        <segue destination="LD3-Am-Cns" kind="showDetail" id="Vc5-YM-y1E"/>
+                        <segue destination="LD3-Am-Cns" kind="showDetail" identifier="toItemDetail" id="Vc5-YM-y1E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4u2-nb-fAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

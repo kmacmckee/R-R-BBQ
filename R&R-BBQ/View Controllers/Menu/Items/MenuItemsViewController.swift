@@ -12,6 +12,7 @@ class MenuItemsViewController: UIViewController, UITableViewDelegate, UITableVie
     
     var menuController: MenuController?
     var menuSection: MenuSection?
+    var selectedItem: MenuItem?
     
     @IBOutlet weak var menuItemsTableView: UITableView!
     @IBOutlet weak var menuSectionImageView: UIImageView!
@@ -49,14 +50,24 @@ class MenuItemsViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
 
-    /*
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let section = menuSection else { return }
+        self.selectedItem = section.items[indexPath.row]
+        
+        self.performSegue(withIdentifier: "toItemDetail", sender: self)
+        
+    }
+    
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "toItemDetail" {
+            guard let destinationVC = segue.destination as? ItemDetailViewController else { return }
+            destinationVC.menuController = self.menuController
+            destinationVC.item = self.selectedItem
+        }
     }
-    */
 
 }

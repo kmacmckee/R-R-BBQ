@@ -11,6 +11,9 @@ import UIKit
 class ItemDetailViewController: UIViewController {
 
     
+    var menuController: MenuController?
+    var item: MenuItem?
+    
     
     @IBOutlet weak var itemImageView: UIImageView!
     
