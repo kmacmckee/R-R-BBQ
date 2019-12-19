@@ -16,23 +16,21 @@ class ItemDetailViewController: UIViewController {
     
     
     @IBOutlet weak var itemImageView: UIImageView!
-    
     @IBOutlet weak var itemNameLabel: UILabel!
-    
     @IBOutlet weak var itemInfoLabel: UILabel!
-    
-    
     @IBOutlet weak var itemOptionsView: UIView!
-    
-    
     @IBOutlet weak var itemPriceLabel: UILabel!
-    
     @IBOutlet weak var addToOrderButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        guard let item = item else { return }
+        
+        itemImageView.image = item.image
+        itemNameLabel.text = item.name
+        itemInfoLabel.text = item.info != nil ? item.info : ""
+        itemPriceLabel.text = String(item.price)
+        
     }
     
 
