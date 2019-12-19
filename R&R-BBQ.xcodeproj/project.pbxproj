@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C478921E23AB006000D531DE /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478921D23AB006000D531DE /* ItemDetailViewController.swift */; };
 		C493464923A19D4400291BA1 /* MenuSectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493464823A19D4400291BA1 /* MenuSectionTableViewCell.swift */; };
 		C493464B23A1AB0800291BA1 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493464A23A1AB0800291BA1 /* MenuItem.swift */; };
 		C493465023A1AE6E00291BA1 /* MenuSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C493464F23A1AE6E00291BA1 /* MenuSection.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C478921D23AB006000D531DE /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 		C493464823A19D4400291BA1 /* MenuSectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSectionTableViewCell.swift; sourceTree = "<group>"; };
 		C493464A23A1AB0800291BA1 /* MenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		C493464F23A1AE6E00291BA1 /* MenuSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuSection.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				C493465323A2C4AA00291BA1 /* MenuItemsViewController.swift */,
 				C493465523A2C5B500291BA1 /* MenuItemTableViewCell.swift */,
+				C478921D23AB006000D531DE /* ItemDetailViewController.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				C493464B23A1AB0800291BA1 /* MenuItem.swift in Sources */,
 				C493464923A19D4400291BA1 /* MenuSectionTableViewCell.swift in Sources */,
 				C493465623A2C5B500291BA1 /* MenuItemTableViewCell.swift in Sources */,
+				C478921E23AB006000D531DE /* ItemDetailViewController.swift in Sources */,
 				C493465423A2C4AA00291BA1 /* MenuItemsViewController.swift in Sources */,
 				C4956FB8239B4E4100BF0B45 /* HomeMenuViewController.swift in Sources */,
 			);
